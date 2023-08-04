@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  height: 200px;
+  background-color: blueviolet;
+}
+.maincontainer {
+  display: flex;
+}
+
+.category {
+  background-color: rgb(213, 213, 225);
+  margin: 20px;
+  width: 20%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
