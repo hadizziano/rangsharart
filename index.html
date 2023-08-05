@@ -2,6 +2,14 @@
   <head>
     <title>Rangshar Art</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script>
+      function handleclick() {
+        document.getElementById("menu").style.visibility = "visible";
+      }
+      setTimeout(function handleleave() {
+        document.getElementById("menu").style.visibility = "hidden";
+      }, 5000);
+    </script>
   </head>
   <body>
     <div class="background">
@@ -9,12 +17,28 @@
         <source src="./clips/particle.mp4" type="video/mp4" />
       </video>
       <div class="header">
-        Rangshar Art
+        <div class="leftside">
+          <div class="profile" alt="masimo">
+            <img width="120px" src="./profilepics/edit1.jpg" />
+            <p style="font-size: 20px">Masimo Mozzione</p>
+            <p>Frontent developer and graphic designer</p>
+          </div>
+          <div class="profile" alt="zaorizzio">
+            <img width="120px" src="./profilepics/zahra.jpg" />
+            <p style="font-size: 20px">Zaorizzio Pankodilazze</p>
+            <p>Illustrator, Graphist and digital painter</p>
+          </div>
+        </div>
+
         <div class="maincontainer">
           <div class="category">Graphics</div>
           <div class="category">Paintings</div>
           <div class="category">UI/UX</div>
           <div class="category">3D</div>
+
+          <div class="menucontent" id="menu">
+            <a href="#">Logo</a><a href="#">Brochure</a><a href="#">Banner</a>
+          </div>
         </div>
       </div>
     </div>
