@@ -10,6 +10,9 @@
   font-size: 30px;
   position: absolute;
   top: 0;
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
 }
 
 body {
@@ -48,6 +51,7 @@ body {
   background-color: rgb(42, 5, 76, 0.4);
 
   @media screen and (max-width: 992px) {
+    padding-top: 50px;
     font-size: 20px;
     width: 100%;
   }
@@ -131,8 +135,15 @@ h1 {
   border-right: solid 1px gray;
   background-color: rgba(0, 221, 255, 0.3);
   height: 1000px;
-  @media screen and (max-width: 1250px) {
-    min-width: 200px;
+  @media screen and (max-width: 500px) {
+    overflow: scroll;
+    min-width: 600px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: auto;
+
+    display: flex;
   }
 }
 
