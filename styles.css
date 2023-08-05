@@ -56,7 +56,8 @@ body {
     padding-top: 90px;
     font-size: 60px;
     min-width: 1220px;
-    background-color: rgba(52, 117, 195, 0.7);
+    background: none;
+    border: solid 2px rgb(0, 118, 245);
   }
 }
 
@@ -147,7 +148,7 @@ h1 {
 .leftside {
   min-width: 300px;
   border-right: solid 1px gray;
-  background-color: rgba(0, 221, 255, 0.3);
+  background-color: rgba(0, 221, 255, 0.1);
   height: 1000px;
 
   @media screen and (max-width: 1000px) {
