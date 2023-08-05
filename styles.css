@@ -14,6 +14,7 @@
 
 body {
   background-color: black;
+  overflow: hidden;
 }
 
 .maincontainer {
@@ -121,9 +122,10 @@ h1 {
   background-color: rgba(0, 221, 255, 0.3);
   height: 1000px;
 }
+
 .video {
-  width: 120%;
-  @media screen and (max-width: 500px) {
-    width: 160%;
+  width: 140%;
+  @media screen and (max-width: 1250px) {
+    width: 500%;
   }
 }
