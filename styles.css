@@ -55,7 +55,7 @@ body {
     height: 200px;
     padding-top: 90px;
     font-size: 60px;
-    min-width: 1220px;
+    min-width: 1200px;
     background: none;
     border: solid 2px rgb(0, 118, 245);
   }
@@ -141,22 +141,23 @@ h1 {
   border-radius: 20px;
   @media screen and (max-width: 1000px) {
     font-size: 40px;
-    overflow: scroll;
   }
 }
 
 .leftside {
   min-width: 300px;
   border-right: solid 1px gray;
-  background-color: rgba(0, 221, 255, 0.1);
+  background-color: rgba(0, 221, 255, 0.3);
   height: 1000px;
 
   @media screen and (max-width: 1000px) {
+    background-color: rgba(0, 221, 255, 0.1);
     width: 100%;
     height: auto;
     overflow: scroll;
-    min-width: 1600px;
+    min-width: 1200px;
     display: flex;
+    border-bottom: solid 2px gray;
   }
 }
 
