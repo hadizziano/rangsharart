@@ -10,7 +10,7 @@
   font-size: 30px;
   position: absolute;
   top: 0;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1000px) {
     display: block;
   }
 }
@@ -21,14 +21,14 @@ body {
 }
 
 .maincontainer {
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1000px) {
     flex-wrap: wrap;
   }
 }
 
 .categorycontainer {
   display: flex;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1000px) {
     flex-wrap: wrap;
   }
 }
@@ -53,7 +53,7 @@ body {
   @media screen and (max-width: 992px) {
     padding-top: 50px;
     font-size: 20px;
-    width: 100%;
+    min-width: 1000px;
   }
 }
 
@@ -135,11 +135,11 @@ h1 {
   border-right: solid 1px gray;
   background-color: rgba(0, 221, 255, 0.3);
   height: 1000px;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1000px) {
     overflow: scroll;
-    min-width: 600px;
+    min-width: 1600px;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
     height: auto;
 
