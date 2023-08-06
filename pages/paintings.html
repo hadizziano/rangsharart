@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Rangshar Art</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./painting.css" />
+    <script>
+      function handleclick(number) {
+        const newsrc = "../paintings/painting" + number + "/main.png";
+        console.log(newsrc);
+        document.getElementById("picdemonstrator").src = newsrc;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="background">
+      <video class="video" autoplay muted loop>
+        <source src="../clips/cinematic.mp4" type="video/mp4" width="100%" />
+      </video>
+
+      <div class="header">
+        <div class="leftside">
+          <div class="painting" alt="masimo">
+            <img
+              class="paintinglittleicon"
+              src="../paintings/painting1/main.png"
+              onclick="handleclick(1)"
+            />
+            <p style="font-size: 20px; color: rgb(187, 0, 255)">
+              <b> City behind waters</b>
+            </p>
+            <p style="width: 200px">An art work with oil</p>
+          </div>
+          <div class="painting" alt="masimo">
+            <img
+              class="paintinglittleicon"
+              src="../paintings/painting2/main.jpg"
+              onclick="handleclick(2)"
+            />
+            <p style="font-size: 20px; color: rgb(187, 0, 255)">
+              <b> City behind waters</b>
+            </p>
+            <p style="width: 200px">An art work with oil</p>
+          </div>
+          <div class="painting" alt="masimo">
+            <img
+              class="paintinglittleicon"
+              src="../paintings/painting3/main.png"
+              onclick="handleclick(3)"
+            />
+            <p style="font-size: 20px; color: rgb(187, 0, 255)">
+              <b> City behind waters</b>
+            </p>
+            <p style="width: 200px">An art work with oil</p>
+          </div>
+        </div>
+        <div class="maincontainer">
+          <img
+            id="picdemonstrator"
+            src="../paintings/painting1/main.png"
+            width="500px"
+            style="margin: 100px"
+          />
+          <div class="categorycontainer">
+            <div class="category">Graphics</div>
+            <div class="category">Paintings</div>
+            <div class="category">UI/UX</div>
+            <div class="category">3D</div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
