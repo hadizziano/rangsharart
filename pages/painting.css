@@ -1,3 +1,169 @@
+.background {
+}
+.header {
+  display: flex;
+  width: 100%;
+  /* background-image: url("./Headers/Header1.jpg"); */
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  @media screen and (max-width: 1000px) {
+    display: block;
+  }
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.maincontainer {
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+}
+
+.categorycontainer {
+  display: flex;
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
+}
+
+.category {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 40%;
+  padding: 20px;
+  border: solid 1px rgb(125, 125, 125);
+  margin: 20px;
+  width: 200px;
+  color: white;
+  height: 100px;
+  border-radius: 20px;
+  font-size: larger;
+  margin-top: 3%;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(42, 5, 76, 0.4);
+
+  @media screen and (max-width: 1000px) {
+    margin: 50px;
+    height: 200px;
+    padding-top: 90px;
+    font-size: 60px;
+    min-width: 1100px;
+    background: none;
+    border: solid 2px rgb(0, 118, 245);
+  }
+}
+
+.category:hover {
+  border: solid 1px rgb(113, 113, 113);
+  cursor: pointer;
+  background-color: rgba(126, 58, 190, 0.8);
+  color: white;
+  /* text-decoration: underline; */
+}
+
+.icons {
+  position: left;
+}
+
+h1 {
+  margin-top: -10px;
+}
+
+.menucontent {
+  visibility: hidden;
+  border: solid 1px gray;
+  width: 30%;
+  height: 100px;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 1%;
+  padding-top: 5%;
+  background-color: rgb(60, 8, 68, 0.5);
+  animation: menu 1s;
+  font-size: 20px;
+}
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.menucontent a {
+  color: white;
+
+  margin: 50px;
+}
+
+.menucontent a:hover {
+  color: rgb(255, 136, 0);
+}
+
+.textcontent {
+  margin-left: 20px;
+
+  margin-top: 10%;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  @media screen and (max-width: 1250px) {
+  }
+}
+
+.profilepic {
+  width: 120px;
+  @media screen and (max-width: 1000px) {
+    width: 200px;
+  }
+}
+
+.profile {
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  /* background-color: rgba(255, 0, 76, 0.3); */
+
+  border-radius: 20px;
+  @media screen and (max-width: 1000px) {
+    font-size: 40px;
+  }
+}
+
+.leftside {
+  min-width: 300px;
+  border-right: solid 1px gray;
+  background-color: rgba(0, 221, 255, 0.3);
+  height: 1000px;
+  overflow: scroll;
+
+  @media screen and (max-width: 1000px) {
+    background-color: rgba(0, 221, 255, 0.1);
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    min-width: 1200px;
+    display: flex;
+    border-bottom: solid 2px gray;
+  }
+}
+
+.video {
+  width: 140%;
+  @media screen and (max-width: 1250px) {
+    width: 500%;
+  }
+}
+
 .paintinglittleicon {
   width: 180px;
   @media screen and (max-width: 1000px) {
@@ -5,6 +171,10 @@
   }
 }
 
+.paintinglittleicon:hover {
+  border: solid 3px rgb(255, 255, 255);
+  cursor: pointer;
+}
 .painting {
   margin: 10px;
   padding: 10px;
@@ -14,5 +184,6 @@
 
   @media screen and (max-width: 1000px) {
     font-size: 40px;
+    margin-left: 190px;
   }
 }
