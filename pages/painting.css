@@ -111,12 +111,15 @@ h1 {
 
 .textcontent {
   margin-left: 20px;
-
+  width: 20%;
   margin-top: 10%;
   font-size: 18px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   @media screen and (max-width: 1250px) {
+    width: 130%;
+    margin: 100px;
+    font-size: 60px;
   }
 }
 
@@ -165,7 +168,8 @@ h1 {
 .paintinglittleicon {
   width: 180px;
   @media screen and (max-width: 1000px) {
-    width: 200px;
+    width: 400px;
+    margin: 50px;
   }
 }
 
@@ -191,12 +195,12 @@ h1 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #7e7e7e;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #9d00ff;
+  background: #ffffff;
 }
 
 /* Handle on hover */
@@ -205,6 +209,8 @@ h1 {
 }
 
 .mainpicture {
+  border: 5px solid rgb(255, 255, 255);
+  margin: 100px;
   @media screen and (max-width: 1000px) {
     margin: 100px;
     width: 130%;
