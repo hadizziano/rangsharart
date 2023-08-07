@@ -161,6 +161,11 @@ h1 {
   margin: 100px;
 }
 
+.textitle {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
 @media screen and (max-width: 1000px) {
   .mainpicture {
     margin: 100px;
@@ -221,5 +226,8 @@ h1 {
   }
   .header {
     display: block;
+  }
+  .textitle {
+    font-size: 50px;
   }
 }
