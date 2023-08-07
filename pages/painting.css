@@ -10,9 +10,6 @@
   font-size: 30px;
   position: absolute;
   top: 0;
-  @media screen and (max-width: 1000px) {
-    display: block;
-  }
 }
 
 body {
@@ -21,16 +18,10 @@ body {
 }
 
 .maincontainer {
-  @media screen and (max-width: 1000px) {
-    flex-wrap: wrap;
-  }
 }
 
 .categorycontainer {
   display: flex;
-  @media screen and (max-width: 1000px) {
-    flex-wrap: wrap;
-  }
 }
 
 .category {
@@ -49,16 +40,6 @@ body {
   justify-content: center;
   text-align: center;
   background-color: rgb(42, 5, 76, 0.4);
-
-  @media screen and (max-width: 1000px) {
-    margin: 50px;
-    height: 200px;
-    padding-top: 90px;
-    font-size: 60px;
-    min-width: 1100px;
-    background: none;
-    border: solid 2px rgb(0, 118, 245);
-  }
 }
 
 .category:hover {
@@ -116,18 +97,10 @@ h1 {
   font-size: 18px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  @media screen and (max-width: 1250px) {
-    width: 130%;
-    margin: 100px;
-    font-size: 60px;
-  }
 }
 
 .profilepic {
   width: 120px;
-  @media screen and (max-width: 1000px) {
-    width: 200px;
-  }
 }
 
 .profile {
@@ -137,9 +110,6 @@ h1 {
   /* background-color: rgba(255, 0, 76, 0.3); */
 
   border-radius: 20px;
-  @media screen and (max-width: 1000px) {
-    font-size: 40px;
-  }
 }
 
 .leftside {
@@ -148,29 +118,14 @@ h1 {
   background-color: rgba(255, 255, 255, 0);
   height: 1000px;
   overflow: scroll;
-
-  @media screen and (max-width: 1000px) {
-    width: 160%;
-    height: auto;
-    overflow: scroll;
-    display: flex;
-    border-bottom: solid 2px gray;
-  }
 }
 
 .video {
   width: 100%;
-  @media screen and (max-width: 1250px) {
-    width: 500%;
-  }
 }
 
 .paintinglittleicon {
   width: 180px;
-  @media screen and (max-width: 1000px) {
-    width: 400px;
-    margin: 50px;
-  }
 }
 
 .paintinglittleicon:hover {
@@ -183,11 +138,6 @@ h1 {
   font-size: 15px;
   border-bottom: solid 1px gray;
   /* background-color: rgba(255, 0, 76, 0.3); */
-
-  @media screen and (max-width: 1000px) {
-    font-size: 40px;
-    margin-left: 190px;
-  }
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -211,8 +161,67 @@ h1 {
 .mainpicture {
   border: 5px solid rgb(255, 255, 255);
   margin: 100px;
-  @media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 500px) {
+  .mainpicture {
     margin: 100px;
     width: 130%;
+  }
+
+  .painting {
+    font-size: 40px;
+    margin-left: 190px;
+  }
+
+  .paintinglittleicon {
+    width: 400px;
+    margin: 50px;
+  }
+
+  .video {
+    width: 500%;
+  }
+
+  .leftside {
+    width: 160%;
+    height: auto;
+    overflow: scroll;
+    display: flex;
+    border-bottom: solid 2px gray;
+  }
+
+  .profile {
+    font-size: 40px;
+  }
+
+  .profilepic {
+    width: 200px;
+  }
+
+  .textcontent {
+    width: 130%;
+    margin: 100px;
+    font-size: 60px;
+  }
+
+  .category {
+    margin: 50px;
+    height: 200px;
+    padding-top: 90px;
+    font-size: 60px;
+    min-width: 1100px;
+    background: none;
+    border: solid 2px rgb(0, 118, 245);
+  }
+
+  .categorycontainer {
+    flex-wrap: wrap;
+  }
+  .maincontainer {
+    flex-wrap: wrap;
+  }
+  .header {
+    display: block;
   }
 }
