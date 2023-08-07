@@ -161,7 +161,7 @@ h1 {
   margin: 100px;
 }
 
-@media screen and (min-width: 100px) and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .mainpicture {
     margin: 100px;
     width: 130%;
